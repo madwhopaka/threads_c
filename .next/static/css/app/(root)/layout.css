@@ -646,11 +646,17 @@ video {
   border-radius: 0.5rem;
   padding: 1rem;
 }
+.mt-10 {
+  margin-top: 2.5rem;
+}
 .block {
   display: block;
 }
 .flex {
   display: flex;
+}
+.hidden {
+  display: none;
 }
 .w-full {
   width: 100%;
@@ -680,6 +686,9 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(135 126 255 / var(--tw-bg-opacity));
 }
+.p-4 {
+  padding: 1rem;
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -700,6 +709,10 @@ video {
 .text-light-1 {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-light-2 {
+  --tw-text-opacity: 1;
+  color: rgb(239 239 239 / var(--tw-text-opacity));
 }
 .custom-scrollbar::-webkit-scrollbar {
     width: 3px;
