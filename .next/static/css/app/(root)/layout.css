@@ -612,6 +612,63 @@ video {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+.bottombar {
+  position: fixed;
+  bottom: 0px;
+  z-index: 10;
+  width: 100%;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  background-color: rgba(16, 16, 18, 0.60);
+  padding: 1rem;
+  --tw-backdrop-blur: blur(16px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+@media (min-width: 400px) {
+
+  .bottombar {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+}
+@media (min-width: 768px) {
+
+  .bottombar {
+    display: none;
+  }
+}
+.bottombar_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+@media (min-width: 400px) {
+
+  .bottombar_container {
+    gap: 1.25rem;
+  }
+}
+.bottombar_link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+@media (min-width: 640px) {
+
+  .bottombar_link {
+    flex: 1 1 0%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+}
 .leftsidebar {
   position: sticky;
   left: 0px;
@@ -654,9 +711,6 @@ video {
 }
 .flex {
   display: flex;
-}
-.hidden {
-  display: none;
 }
 .w-full {
   width: 100%;
@@ -705,6 +759,11 @@ video {
   font-size: 24px;
   line-height: 140%;
   font-weight: 700;
+}
+.text-subtle-medium {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
 }
 .text-light-1 {
   --tw-text-opacity: 1;
@@ -854,6 +913,13 @@ video {
 @media not all and (min-width: 1024px) {
 
   .max-lg\:hidden {
+    display: none;
+  }
+}
+
+@media not all and (min-width: 640px) {
+
+  .max-sm\:hidden {
     display: none;
   }
 }
